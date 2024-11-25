@@ -38,6 +38,15 @@
             <i class="fa-solid fa-bookmark"></i>
           </h2>
         </div>
+        <div id="validateDiv" class="validation-message bg-white text-center p-5 position-absolute">
+          <h6>Site Name or Url is <span class="text-danger">not valid</span>, Please follow the rules below :</h6>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-arrow-right me-2 text-danger"></i>Site name must contain at least 3 characters
+            </li>
+            <li><i class="fa-solid fa-arrow-right me-2 text-danger"></i>Site URL must be a valid one</li>
+          </ul>
+          <button id="closePanelBtn" class="btn btn-danger">Close</button>
+        </div>
         <div class="uInput-form text-center mb-3">
           <div class="form-floating mb-3">
             <input type="text" class="w-100 form-control" id="bookName" placeholder="Bookmark Name">
@@ -60,13 +69,6 @@
           </tr>
         </thead>
         <tbody id="tableBody">
-          <tr>
-            <th scope="row">1</th>
-            <td>Youtube</td>
-            <td><button class="btn btn-primary submitBtn">Visit</button></td>
-            <td><button class="btn btn-danger">Delete</button></td>
-          </tr>
-
         </tbody>
       </table>
     </div>
