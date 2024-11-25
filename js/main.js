@@ -53,7 +53,7 @@ function addBookMark() {
   var bookURL = siteURLInput.value;
   if (!bookURL.toLowerCase().startsWith("h")) {
     bookURL = "https://" + siteURLInput.value;
-  }
+  } 
   var bookMark = {
     name: siteNameInput.value,
     url: bookURL
